@@ -42,3 +42,23 @@ body, html {
         pointer-events: none;
     }
       
+    #leaves-left {
+        width: 400px; 
+        height: auto; 
+        top: 3;
+        left: 0;
+        position: absolute;
+        z-index: 3;
+        pointer-events: none;
+    }
+
+         
+    #leaves-right {
+        width: 400px; 
+        height: auto; 
+        top: 3;
+        right: 0;
+        position: absolute;
+        z-index: 3;
+        pointer-events: none;
+    }
