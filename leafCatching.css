@@ -5,7 +5,40 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 120px;
 
     background-color: skyblue;
   }
+
+* {
+    cursor:url("images/hand.png"), auto;
+    }
   
+
+    .home-button {
+        position: fixed;
+        top: 40px; 
+        right: 30px; 
+        padding: 10px 20px; 
+        background-color: #208167; 
+        color: white; 
+        border-style: solid; 
+        border-color: black;
+        border-width: 5px;
+        font-size: 20px; 
+        z-index: 1000; 
+      }
+      
+      .home-button:hover {
+        background-color: #000000; 
+      }
+
+      #title-image {
+        width: 600px; 
+        height: auto; 
+        top: 0;
+        position: absolute;
+        z-index: 3;
+        pointer-events: none;
+    }
+      

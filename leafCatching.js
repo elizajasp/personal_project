@@ -37,15 +37,15 @@ function Screen() {
   if (startScreen === true) {
     fill("rgb(5,0,0)");
     textAlign(CENTER)
-    textSize(20)
-    text("Click the Mouse to Begin", width / 2, height / 2);
+    textSize(30)
+    text("Click to Start Collecting Leaves!", width / 2, height / 2);
     
   }
    
 }
 
 function startGame (){
-text("score= " + score,40,20)
+// text("Leaves Collected= " + score,50,50)
   drawLeaf(x,y,30)
   drawBasket(mouseX,height - 30,68,50)
   y+=velocity;
@@ -121,12 +121,12 @@ text("score= " + score,40,20)
     gameWin()
   }
     else {
-      text("You Lose", width / 2, height / 2)
+      text("Oh no! You dropped one.", width / 2, height / 2)
     }
       
     
   }
   
   function gameWin(){
-    text ("Game Over, You Win", width / 2, height / 2)
+    text ("Yay!", width / 2, height / 2)
   }

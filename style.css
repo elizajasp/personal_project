@@ -9,3 +9,10 @@ body, html {
     background-color: rgb(247, 209, 191);
   }
   
+  * {
+    cursor:url("images/hand.png"), auto;
+    }
+
+.hover-cursor {
+    cursor: url("images/hover.png"), auto;
+}

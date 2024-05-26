@@ -3,12 +3,13 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .content {
   position: relative;
   z-index: 1;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .layered-image {
@@ -20,4 +21,35 @@ html, body {
 
 canvas {
   display: block;
+}
+
+* {
+  cursor:url("images/pencil.png"), auto;
+  }
+
+
+#title-image {
+    width: 500px; 
+    height: auto; 
+    position: fixed;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.home-button {
+  position: fixed;
+  top: 40px; 
+  right: 30px; 
+  padding: 10px 20px; 
+  background-color: #fb4fc8; 
+  color: white; 
+  border-style: solid; 
+  border-color: black;
+  border-width: 5px;
+  font-size: 20px; 
+  z-index: 1000; 
+}
+
+.home-button:hover {
+  background-color: #000000; 
 }
