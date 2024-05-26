@@ -20,18 +20,17 @@ body, html {
 }
 
 .popup {
-    display: none; /* Hidden by default */
-    position: fixed; /* Sit on top of the page content */
-    top: 40px; /* 20px from the top */
-    left: 30px; /* 20px from the left */
-    padding: 15px; /* Some padding */
-    background-color: hsl(8, 56%, 75%); /* Light grey background */
-    border: 5px solid #000000; /* Light grey border */
-    z-index: 1000; /* Sit on top of other content */
+    display: none;
+    position: fixed; 
+    top: 40px; 
+    left: 30px; 
+    padding: 15px;
+    background-color: hsl(8, 56%, 75%);
+    border: 5px solid #000000;
+    z-index: 1000;
     font-size: 20px;
 }
 
-/* Close button */
 .close-btn {
     position: absolute;
     top: 10px;

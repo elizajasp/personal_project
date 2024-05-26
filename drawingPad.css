@@ -9,13 +9,12 @@ html, body {
 .content {
   position: relative;
   z-index: 1;
-  /* padding: 20px; */
 }
 
 .layered-image {
   position: absolute;
   width: 100%;
-  z-index: 2;    /* Ensure the image is on top */
+  z-index: 2;    
   pointer-events: none;
 }
 

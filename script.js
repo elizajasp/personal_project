@@ -1,4 +1,4 @@
-// Function to show the popup and start typing effect after 2 seconds
+
 window.onload = function() {
     setTimeout(function() {
         document.getElementById('popup').style.display = 'block';
@@ -12,17 +12,17 @@ window.onload = function() {
     }, 500);
 };
 
-// Function to close the popup
+
 function closePopup() {
     document.getElementById('popup').style.display = 'none';
 }
 
-// Function to simulate typing effect for multiple lines
+
 function typeText(lines, elementId, speed = 50) {
     let lineIndex = 0;
     let charIndex = 0;
     const element = document.getElementById(elementId);
-    element.innerHTML = ""; // Clear any existing text
+    element.innerHTML = ""; 
 
     function typeWriter() {
         if (lineIndex < lines.length) {
@@ -31,7 +31,7 @@ function typeText(lines, elementId, speed = 50) {
                 charIndex++;
                 setTimeout(typeWriter, speed);
             } else {
-                element.innerHTML += "<br>"; // Add a line break after each line
+                element.innerHTML += "<br>"; 
                 charIndex = 0;
                 lineIndex++;
                 setTimeout(typeWriter, speed);

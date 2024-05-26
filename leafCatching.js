@@ -1,4 +1,4 @@
-//a game where you are suppose to catch the ball with the rectangle 
+
 let x = 150
 let y = 30
 let startScreen = true 
@@ -45,7 +45,6 @@ function Screen() {
 }
 
 function startGame (){
-// text("Leaves Collected= " + score,50,50)
   drawLeaf(x,y,30)
   drawBasket(mouseX,height - 30,68,50)
   y+=velocity;
@@ -77,14 +76,12 @@ function startGame (){
   stroke('rgb(2,37,2)');
   strokeWeight(2);
 
-  // Draw the leaf using bezier curves
   beginShape();
   vertex(0, 0);
   bezierVertex(-20, -10, -20, -30, 0, -40);
   bezierVertex(20, -30, 20, -10, 0, 0);
   endShape(CLOSE);
 
-  // Draw the leaf's midrib
   strokeWeight(1);
   line(0, 0, 0, -40);
 
@@ -98,7 +95,6 @@ function startGame (){
   stroke('rgb(139,79,17)');
   strokeWeight(2);
 
-  // Draw the basket
   beginShape();
   vertex(0, 0);
   vertex(68, 0);
@@ -108,7 +104,6 @@ function startGame (){
   vertex(0, 20);
   endShape(CLOSE);
 
-  // Draw the basket's bottom
   fill('saddlebrown');
   rect(10, 30, 48, 10);
 
