@@ -7,6 +7,8 @@ body, html {
     align-items: center;
 
     background-color: rgb(247, 209, 191);
+
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   * {
@@ -15,4 +17,28 @@ body, html {
 
 .hover-cursor {
     cursor: url("images/hover.png"), auto;
+}
+
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Sit on top of the page content */
+    top: 40px; /* 20px from the top */
+    left: 30px; /* 20px from the left */
+    padding: 15px; /* Some padding */
+    background-color: hsl(8, 56%, 75%); /* Light grey background */
+    border: 5px solid #000000; /* Light grey border */
+    z-index: 1000; /* Sit on top of other content */
+    font-size: 20px;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    cursor: pointer;
+    border: none;
 }
